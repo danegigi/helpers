@@ -1,0 +1,19 @@
+{
+  "name": "helpers",
+  "version": "0.0.1",
+  "description": "collection of helpful modules",
+  "main": "index.js",
+  "author": "ginad",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "should": "^11.2.1"
+  },
+  "dependencies": {
+    "gm": "^1.23.0",
+    "sendgrid": "^4.8.4"
+  }
+}
