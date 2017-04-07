@@ -65,6 +65,15 @@ class Image {
     });
   }
 
+ buffer(type){
+    return new Promise((resolve, reject) => {
+      this.img.toBuffer(type,(err, buffer) => {
+        if (err) reject(err); 
+        resolve(buffer);
+      });
+    });
+  }
+
   stream (writable_stream, type){
     if(!writable_stream) return this.img.stream(type);
     return new Promise((resolve, reject) => {
